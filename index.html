@@ -51,7 +51,7 @@
     <img src="logo.jpg" alt="Logo">
   </div>
   <div class="products">
-    <div class="product">
+    <div class="product-card">
       <img src="ring1.jpg" alt="Ring 1">
       <div class="info">ring1<br>¥12,000</div>
     </div>
@@ -61,4 +61,26 @@
     </div>
   </div>
 </body>
+  <style>
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+.product-card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.05);
+  display: inline-block;
+  margin: 20px;
+}
+
+.product-card:hover {
+  transform: translateY(-10px) rotateZ(1deg) scale(1.02);
+  box-shadow: 0 20px 30px rgba(255, 255, 255, 0.15);
+}
+ </style>
 </html>
